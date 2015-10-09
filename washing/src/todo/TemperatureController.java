@@ -34,8 +34,10 @@ public class TemperatureController extends PeriodicThread {
 	}
 
 	private void sendOn() {
+		
 		if (machine.getWaterLevel() > 0)
             machine.setHeating(true);
+		
 	}
 	private void sendOff() {
 		machine.setHeating(false);
